@@ -1,0 +1,19 @@
+current directory: /Users/dysonbreakstone/coding/projects/receipt_tracker/lambdaPhotoUpload/my_deployment_package/vendor/bundle/ruby/3.2.0/gems/cgi-0.4.1/ext/cgi/escape
+/Users/dysonbreakstone/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/dysonbreakstone/coding/projects/receipt_tracker/lambdaPhotoUpload/my_deployment_package/vendor/bundle/ruby/3.2.0/gems/cgi-0.4.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20250106-13972-7je4cu sitelibdir\=./.gem.20250106-13972-7je4cu clean
+
+current directory: /Users/dysonbreakstone/coding/projects/receipt_tracker/lambdaPhotoUpload/my_deployment_package/vendor/bundle/ruby/3.2.0/gems/cgi-0.4.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20250106-13972-7je4cu sitelibdir\=./.gem.20250106-13972-7je4cu
+compiling escape.c
+linking shared-object cgi/escape.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/dysonbreakstone/coding/projects/receipt_tracker/lambdaPhotoUpload/my_deployment_package/vendor/bundle/ruby/3.2.0/gems/cgi-0.4.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20250106-13972-7je4cu sitelibdir\=./.gem.20250106-13972-7je4cu install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20250106-13972-7je4cu/cgi
+
+current directory: /Users/dysonbreakstone/coding/projects/receipt_tracker/lambdaPhotoUpload/my_deployment_package/vendor/bundle/ruby/3.2.0/gems/cgi-0.4.1/ext/cgi/escape
+make DESTDIR\= sitearchdir\=./.gem.20250106-13972-7je4cu sitelibdir\=./.gem.20250106-13972-7je4cu clean
