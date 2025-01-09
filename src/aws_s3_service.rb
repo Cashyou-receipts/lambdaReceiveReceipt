@@ -18,7 +18,7 @@ class AwsS3Service
     CLIENT.list_objects_v2(bucket: bucket).contents
   end
 
-  def upload_receipt!(filename:, object_key:, message_id:)
+  def upload_receipt!(filename:, object_key:, message_id:, from_number:)
     File.open(filename, "rb") do |file|
       CLIENT.put_object({
         body: file,
@@ -26,7 +26,7 @@ class AwsS3Service
         key: object_key,
         metadata: {
           "updload_date"=>Date.today.to_s,
-          "from_number"=>TwilioService.fetch_user_phone(message_id),
+          "from_number"=>from_number,
           "message_id"=>message_id
         },
         content_type: "image/jpg"
