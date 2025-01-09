@@ -26,7 +26,8 @@ class AwsS3Service
         key: object_key,
         metadata: {
           "updload_date"=>Date.today.to_s,
-          "from_number"=>TwilioService.fetch_user_phone(message_id)
+          "from_number"=>TwilioService.fetch_user_phone(message_id),
+          "message_id"=>message_id
         },
         content_type: "image/jpg"
       })
