@@ -30,5 +30,13 @@ def lambda_handler(event:, context:)
   AWS.upload_receipt!(filename: filename, object_key: "#{from_number}/twilioUploadTest", message_id: message_id, from_number: from_number)
   
   HTTParty.delete(media_url, basic_auth: { username: ENV["TWILIO_ACCOUNT_SID"], password: ENV["TWILIO_AUTH_TOKEN"] })
+  ## TODO
+  # replace this placeholder response with useful response codes.
+  return {
+      statusCode: 200,
+      body: {
+        message: 'placeholder response'
+      }.to_json
+    }
 end  
 
